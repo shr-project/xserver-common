@@ -211,3 +211,8 @@ fi
 if [ "$XSERVER" != "Xorg" ] ; then
     ARGS="$ARGS $MOUSE $KDRIVEARGS"
 fi
+
+# let a local script modify the variables                    
+if [ -e /etc/X11/xserver-system ] ; then                    
+       . /etc/X11/xserver-system                    
+fi                    
