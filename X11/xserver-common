@@ -129,6 +129,9 @@ else
         "herring")
             DPI="235"
             ARGS="$ARGS -dpi ${DPI} -nocursor";;
+        "mahimahi")
+            DPI="254"
+            ARGS="$ARGS -dpi ${DPI}";;
         "generic_omap1510/1610/1710")
             ARGS="$ARGS -screen ${SCREEN_SIZE}"
             DPI="225" ;;
