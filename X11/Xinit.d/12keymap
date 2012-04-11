@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /etc/init.d/functions
+. /etc/X11/functions
 
 # since kdrive 1.4 there is no default keymap in server
 xmodmap - </etc/X11/xmodmap/default.xmodmap

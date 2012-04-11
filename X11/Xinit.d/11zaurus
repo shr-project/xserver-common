@@ -8,7 +8,7 @@ else
    CHCK=chkhinge
 fi
 
-. /etc/init.d/functions
+. /etc/X11/functions
 
 $CHCK -e
 if [ $? = 12 ]; then

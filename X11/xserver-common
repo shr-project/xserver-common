@@ -30,7 +30,7 @@ if [ -f /etc/profile ]; then
   . /etc/profile
 fi
 
-. /etc/init.d/functions
+. /etc/X11/functions
 
 fallback_screen_arg() {
     geom=`fbset | grep geometry`
