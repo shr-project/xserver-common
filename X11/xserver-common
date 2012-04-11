@@ -161,6 +161,14 @@ else
                 ARGS="$ARGS -dpi ${DPI} -nocursor"
             fi
             ;;
+        "gta04")
+            DPI="280"
+            if [ "$XSERVER" != "Xorg" ] ; then
+                ARGS="$ARGS -screen ${SCREEN_SIZE}"
+            else
+                ARGS="$ARGS -dpi ${DPI} -nocursor"
+            fi
+            ;;
         "motorola_ezx_platform")
             ARGS="$ARGS -screen 240x320"
             DPI="170" ;;
