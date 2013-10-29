@@ -4,6 +4,6 @@
 . /etc/X11/xserver-common
 
 echo "tslib: $TSLIB_TSDEVICE"
-echo "exec $XSERVER $ARGS -dpi $DPI $*"
-exec $XSERVER $ARGS -dpi $DPI $*
+echo "exec xinit /etc/X11/Xsession -- $XSERVER $ARGS -dpi $DPI $*"
 
+exec xinit /etc/X11/Xsession -- $XSERVER $ARGS -dpi $DPI $*
